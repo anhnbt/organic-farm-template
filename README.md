@@ -1,13 +1,39 @@
 # organic-farm-template
  
-Thành viên:
+Project report made by four students:
 
 - Nguyễn Bá Tuấn Anh
 - Bùi Đức Thành
 - Nguyễn Tuấn Kiệt
 - Nguyễn Minh Quang
 
+## Table of Content
+
+Page: 1. Introduction
+      2. Statement of Problem 
+      3. User Requirements (Đọc statement of problem)
+        Yêu cầu chung:
+      4. Objectives: Mục tiêu
+      5. Scope of the Project
+        - Dựng lên giao diện theo yêu cầu đồng thời lên UI/UX cho hợp lý với đề bài
+      6. Screenshots 
+        - Chụp từng page
+      7. User Guide
+- Vào trang chủ xem những sản phẩm nổi bật
+- Hướng dẫn bộ lọc
+- Xem thông tin
+
+
+- Tên đặt tên dự án + source-code
+
+objectfit cover để tránh méo ảnh
+window.products = [];
+
+Doc đính kèm với project bằng cấp với file source code
 ## Problem Statement
+
+- Home page có cái gì
+
 
 Star Organic farm is commenced in the year 1988. Company is involved in trading
 and manufacturing a wide range of Organic Products and spices to the consumers all
