@@ -9,16 +9,17 @@
     <title>Organic farm</title>
 
     <!-- All CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <!-- CSS main-->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
     <!-- CSS Quang -->
 
     <!-- CSS My Style-->
-    <link rel="stylesheet" href="css/KietCss1.css">
-    <Link rel="stylesheet" href="Css/Styles-Slider-Bottom.css"></Link>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/KietCss1.css">
+    <Link rel="stylesheet" href="./css/Styles-Slider-Bottom.css">
+    </Link>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 
 </head>
 
@@ -26,9 +27,11 @@
 
     <!--  header  -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-gradient shadow-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="img/logo.png" width="50px" alt=""></a>
+            <a class="navbar-brand" href="/">
+                <img src="img/logo.png" width="44px" alt="Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -37,36 +40,32 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/products.html">Product</a>
+                        <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <div class="dropdown">
-                            <button class="dropbtn">Sản phẩm</button>
-                            <div class="dropdown-content">
-                                <a href="#">Sp 1</a>
-                                <a href="#">Sp 2</a>
-                                <a href="#">Sp 3</a>
-                                <a href="#">Sp 4</a>
-                            </div>
-                        </div>
-
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Blog</a>
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
+                        <a class="nav-link" href="#showcase">Show case</a>
                     </li>
                 </ul>
-                <form class="d-flex Search">
+                <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-" type="submit"><i class="bi bi-search"></i></button>
+                    <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
         </div>
@@ -207,7 +206,7 @@
     </section>
 
     <!-- Product portfolio -->
-    <Section class="section-paddingg" id="team">
+    <section class="section-paddingg" id="showcase">
         <div id="cards_landscape_wrap-2">
             <div class="container">
                 <div class="row">
@@ -218,7 +217,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="">
                             <div class="card-flyer">
                                 <div class="text-box">
@@ -233,7 +232,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="">
                             <div class="card-flyer">
                                 <div class="text-box">
@@ -248,7 +247,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="">
                             <div class="card-flyer">
                                 <div class="text-box">
@@ -266,7 +265,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="">
                             <div class="card-flyer">
                                 <div class="text-box">
@@ -281,7 +280,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="">
                             <div class="card-flyer">
                                 <div class="text-box">
@@ -296,7 +295,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="">
                             <div class="card-flyer">
                                 <div class="text-box">
@@ -314,7 +313,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="">
                             <div class="card-flyer">
                                 <div class="text-box">
@@ -329,7 +328,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="">
                             <div class="card-flyer">
                                 <div class="text-box">
@@ -344,7 +343,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
                         <a href="">
                             <div class="card-flyer">
                                 <div class="text-box">
@@ -643,7 +642,7 @@
                             <li><a href="#">...</a></li>
                             <li><a href="#">...</a></li>
                         </ul>
-                        <p class="socials" >
+                        <p class="socials">
                             <A>
                                 <i class="bi bi-facebook"></i>
                             </A>
