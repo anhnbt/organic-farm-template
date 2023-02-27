@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--divinectorweb.com-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- All CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css">
+    <!-- CSS main-->
+    <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .mapouter {
+            height: 100%;
+        }
+
+        .mapouter iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white bg-gradient shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="./img/web-logo.png" width="80px" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-success dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="/contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#showcase">Show case</a>
+                    </li>
+                </ul>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2 search-click" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Wrapper container -->
+    <div class="container" style="margin-top: 80px">
+        <div class="row my-2">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white p-2">
+                        <li class="breadcrumb-item"><a href="/" class="text-decoration-none">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">Contact Us</h1>
+                <h6 class="card-subtitle mb-2 text-muted">Contact us to get assisted support</h6>
+                <div class="row my-3">
+                    <div class="col-md-6">
+                        <h5 class="title">Meet us</h5>
+                        <ul class="list-unstyled">
+                            <li class="phone">Hotline: <a href="tel:+84382020858">0382 020 858</a></li>
+                            <li class="mail">Email: <a href="mailto:info@aptech.vn">info@aptech.vn</a></li>
+                            <li class="adr">Address: <a href="https://goo.gl/maps/UTZhQmUjPrM2" target="_blank">Tầng 1,
+                                    Tòa C5,
+                                    Đại học Thủy Lợi, 175 Tây Sơn, Đống Đa, Hà Nội</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="title">Send us a message</h5>
+                        <!-- Bootstrap 5 starter form -->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                            <!-- Name input -->
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Your Name <span
+                                        class="text-danger">*</span></label>
+                                <input class="form-control" id="name" type="text" placeholder="Name"
+                                    data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                            </div>
+
+                            <!-- Email address input -->
+                            <div class="mb-3">
+                                <label class="form-label" for="emailAddress">Email Address</label>
+                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
+                                    data-sb-validations="required, email" />
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is
+                                    required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email
+                                    is not
+                                    valid.</div>
+                            </div>
+
+                            <!-- Message input -->
+                            <div class="mb-3">
+                                <label class="form-label" for="message">Message <span
+                                        class="text-danger">*</span></label>
+                                <textarea class="form-control" id="message" type="text" placeholder="Message"
+                                    style="height: 10rem;" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.
+                                </div>
+                            </div>
+
+                            <!-- Form submissions success message -->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">Form submission successful!</div>
+                            </div>
+
+                            <!-- Form submissions error message -->
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                            </div>
+
+                            <!-- Form submit button -->
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-lg disabled" id="submitButton"
+                                    type="submit">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-md-12">
+                <div class="mapouter">
+                    <iframe
+                        src="https://maps.google.com/maps?q=T%E1%BA%A7ng%201,%20T%C3%B2a%20C5,%20%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20Th%E1%BB%A7y%20L%E1%BB%A3i,%20175%20T%C3%A2y%20S%C6%A1n,%20%C4%90%E1%BB%91ng%20%C4%90a,%20H%C3%A0%20N%E1%BB%99i&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="text-center">
+                        <img src="./img/web-logo.png" width="200px" alt="">
+                        <div class="mt-2 d-grid gap-2 d-flex justify-content-center">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2 class="fs-5 text-uppercase">ABOUT</h2>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link text-success" href="./about-us.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2 class="fs-5 text-uppercase">CUSTOMER SERVICE</h2>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link text-success" href="./contact-us.html">Contact
+                                    Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-box">
+                        <h2 class="fs-5 text-uppercase">Products</h2>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- All Js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- SB Forms JS -->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
