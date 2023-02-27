@@ -5,156 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Organic farm</title>
-
     <!-- All CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.min.css">
     <!-- CSS main-->
-    <link rel="stylesheet" href="css/main.css">
-    <!-- CSS Quang -->
-
-    <!-- CSS My Style-->
-    <link rel="stylesheet" href="css/KietCss1.css">
-    <Link rel="stylesheet" href="Css/Styles-Slider-Bottom.css">
-    </Link>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
     <style>
-        body {
-            font-family: "Open Sans", sans-serif;
-        }
-
-        h2 {
-            color: #000;
-            font-size: 26px;
-            font-weight: 300;
-            text-align: center;
-            text-transform: uppercase;
-            position: relative;
-            margin: 30px 0 80px;
-        }
-
-        h2 b {
-            color: #ffc000;
-        }
-
-        h2::after {
-            content: "";
-            width: 100px;
-            position: absolute;
-            margin: 0 auto;
-            height: 4px;
-            background: rgba(0, 0, 0, 0.2);
-            left: 0;
-            right: 0;
-            bottom: -20px;
-        }
-
-        .carousel {
-            margin: 50px auto;
-            padding: 0 70px;
-        }
-
-        .carousel .carousel-item {
-            min-height: 330px;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .carousel .carousel-item .img-box {
-            height: 160px;
-            width: 100%;
-            position: relative;
-        }
-
-        .carousel .carousel-item img {
-            max-width: 100%;
-            max-height: 100%;
-            display: inline-block;
-            position: absolute;
-            bottom: 0;
-            margin: 0 auto;
-            left: 0;
-            right: 0;
-        }
-
-        .carousel .carousel-item h4 {
-            font-size: 18px;
-            margin: 10px 0;
-        }
-
-        .carousel .carousel-item .btn {
-            color: #333;
-            border-radius: 0;
-            font-size: 11px;
-            text-transform: uppercase;
-            font-weight: bold;
-            background: none;
-            border: 1px solid #ccc;
-            padding: 5px 10px;
-            margin-top: 5px;
-            line-height: 16px;
-        }
-
-        .carousel .carousel-item .btn:hover,
-        .carousel .carousel-item .btn:focus {
-            color: #fff;
-            background: #000;
-            border-color: #000;
-            box-shadow: none;
-        }
-
-        .carousel .carousel-item .btn i {
-            font-size: 14px;
-            font-weight: bold;
-            margin-left: 5px;
-        }
-
-        .carousel .thumb-wrapper {
-            text-align: center;
-        }
-
-        .carousel .thumb-content {
-            padding: 15px;
-        }
-
-        .carousel .item-price {
-            font-size: 13px;
-            padding: 2px 0;
-        }
-
-        .carousel .item-price strike {
-            color: #999;
-            margin-right: 5px;
-        }
-
-        .carousel .item-price span {
-            color: #86bd57;
-            font-size: 110%;
-        }
-
-        .carousel .carousel-indicators {
-            bottom: -50px;
-        }
-
-        .carousel-indicators li,
-        .carousel-indicators li.active {
-            width: 10px;
-            height: 10px;
-            margin: 4px;
-            border-radius: 50%;
-            border-color: transparent;
-            border: none;
-        }
-
-        .carousel-indicators li {
-            background: rgba(0, 0, 0, 0.2);
-        }
-
-        .carousel-indicators li.active {
-            background: rgba(0, 0, 0, 0.6);
-        }
-
         /* AnhNBT Product Detail */
         figure.zoom {
             background-position: 50% 50%;
@@ -202,11 +58,11 @@
 </head>
 
 <body>
-    <!--  header  -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white bg-gradient shadow-sm fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/"><img src="img/logo.png" width="50px" alt=""></a>
+            <a class="navbar-brand" href="/">
+                <img src="./img/web-logo.png" width="80px" alt="Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -215,102 +71,64 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/products.html">Product</a>
+                        <a class="nav-link text-success" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <div class="dropdown">
-                            <button class="dropbtn">Sản phẩm</button>
-                            <div class="dropdown-content">
-                                <a href="#">Sp 1</a>
-                                <a href="#">Sp 2</a>
-                                <a href="#">Sp 3</a>
-                                <a href="#">Sp 4</a>
-                            </div>
-                        </div>
-
+                        <a class="nav-link text-success dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                            <li><a class="dropdown-item" href="#">SP 1</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Blog</a>
+                        <a class="nav-link text-success" href="/contact-us.html">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
+                        <a class="nav-link text-success" href="#showcase">Show case</a>
                     </li>
                 </ul>
-                <form class="d-flex Search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-" type="submit"><i class="bi bi-search"></i></button>
+                <form class="d-flex ms-auto">
+                    <input class="form-control me-2 search-click" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container" id="contentarea" style="margin-top: 80px">
+        <div class="row my-2">
+            <div class="col-12">
+                <nav class="" aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-white p-2">
+                        <li class="breadcrumb-item"><a class="text-decoration-none" href="/">Home</a></li>
+                        <li id="product-category" class="breadcrumb-item active" aria-current="page"></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-9">
-                <div class="my-4">
-                    <div class="container">
-                        <!-- row -->
-                        <div class="row ">
-                            <!-- col -->
-                            <div class="col-12">
-                                <!-- breadcrumb -->
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb mb-0">
-                                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="#">Fresh Vegetables</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Fresh Cucumber</li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="row product">
                     <div class="col-sm-6">
-                        <figure class="zoom" style="background-image: url('./images/Fresh-Cucumber-w410.jpg')"
-                            onmousemove="zoom(event)" ontouchmove="zoom(event)">
-                            <img src="./images/Fresh-Cucumber-w410.jpg" class="img-fluid feature" alt="">
+                        <figure class="zoom" id="product-thumbnail"
+                            style="background-image: url('./images/Fresh-Cucumber-w410.jpg')" onmousemove="zoom(event)"
+                            ontouchmove="zoom(event)">
+                            <img id="product-thumbnail-img" src="" class="img-fluid feature" alt="">
                         </figure>
                         <div class="product-tools">
-                            <div class="thumbnails row g-3" id="productThumbnails" aria-label="Carousel Pagination">
-                                <div class="col-3" data-nav="0" aria-label="Carousel Page 1" aria-controls="product"
-                                    tabindex="-1">
-                                    <div class="thumbnails-img">
-                                        <!-- img -->
-                                        <img src="../images/Fresh-Cucumber-w410.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-3" data-nav="1" aria-label="Carousel Page 2" aria-controls="product"
-                                    tabindex="-1">
-                                    <div class="thumbnails-img">
-                                        <!-- img -->
-                                        <img src="../images/Fresh-Cucumber-w410.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-3" data-nav="2" aria-label="Carousel Page 3" aria-controls="product"
-                                    tabindex="-1">
-                                    <div class="thumbnails-img">
-                                        <!-- img -->
-                                        <img src="../images/Fresh-Cucumber-w410.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-3 tns-nav-active" data-nav="3"
-                                    aria-label="Carousel Page 4 (Current Slide)" aria-controls="product">
-                                    <div class="thumbnails-img">
-                                        <!-- img -->
-                                        <img src="../images/Fresh-Cucumber-w410.jpg" alt="">
-                                    </div>
-                                </div>
+                            <div class="thumbnails row g-3" id="product-images">
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <h1 class="mb-1">Fresh Cucumber</h1>
+                        <h1 class="mb-1 fs-5" id="product-title"></h1>
                         <div class="mb-4">
                             <!-- rating -->
                             <small class="text-warning">
@@ -320,348 +138,91 @@
                                 <i class="fa fa-star" aria-hidden="true"></i>
                                 <i class="fa fa-star-half" aria-hidden="true"></i>
                             </small>
-                            <a href="#" class="ms-2">(30 reviews)</a>
+                            <span id="product-review" class="ms-2">(0 reviews)</span>
                         </div>
                         <div class="fs-4">
-                            <!-- price --><span class="fw-bold text-dark">$32</span> <span
-                                class="text-decoration-line-through text-muted">$35</span><span><small
-                                    class="fs-6 ms-2 text-danger">26%
-                                    Off</small></span>
+                            <span class="fw-bold text-dark" id="product-price">$0</span>
+                            <span class="text-decoration-line-through text-muted"
+                                id="product-discountPercentage">$0</span>
                         </div>
                         <hr class="my-6">
-                        <div class="input-group mb-3">
-                            <button class="btn btn-outline-secondary" type="button" id="button-minus">-</button>
-                            <input type="number" step="1" max="10" value="1" name="quantity" class="form-control" size="10">
-                            <button class="btn btn-outline-secondary" type="button" id="button-plus">+</button>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="input-group">
+                                    <button class="btn btn-outline-success" type="button" id="button-minus" onclick="decreaseValue()">-</button>
+                                    <input type="number" step="1" max="10" value="1" name="quantity" id="product-quantity"
+                                        class="form-control w-25">
+                                    <button class="btn btn-outline-success" type="button" id="button-plus" onclick="increaseValue()">+</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="mt-3 row justify-content-start g-2 align-items-center">
-                            <a href="#" class="btn btn-primary">Add to Cart</a>
+                            <button type="button" class="btn btn-success">Add to Cart</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <h2>Product Details</h2>
-            <div class="my-8">
-                <div class="mb-5">
-                    <!-- text -->
-                    <h4 class="mb-1">Nutrient Value &amp; Benefits</h4>
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, tellus iaculis
-                        urna
-                        bibendum
-                        in lacus, integer. Id imperdiet vitae varius sed magnis eu nisi nunc sit. Vel, varius
-                        habitant ornare ac rhoncus. Consequat risus facilisis ante ipsum netus risus adipiscing
-                        sagittis sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="mb-5">
-                    <h5 class="mb-1">Storage Tips</h5>
-                    <p class="mb-0">Nisi, tellus iaculis urna bibendum in lacus, integer. Id imperdiet vitae varius
-                        sed
-                        magnis eu
-                        nisi nunc sit. Vel, varius habitant ornare ac rhoncus. Consequat risus facilisis ante ipsum
-                        netus risus adipiscing sagittis sed.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
-                <!-- content -->
-                <div class="mb-5">
-                    <h5 class="mb-1">Unit</h5>
-                    <p class="mb-0">3 units</p>
-                </div>
-                <div class="mb-5">
-                    <h5 class="mb-1">Seller</h5>
-                    <p class="mb-0">DMart Pvt. LTD</p>
-                </div>
-                <div>
-                    <h5 class="mb-1">Disclaimer</h5>
-                    <p class="mb-0">Image shown is a representation and may slightly vary from the actual product.
-                        Every
-                        effort
-                        is made to maintain accuracy of all information displayed.</p>
-                </div>
+            <h2 class="h4 pb-2 my-4 text-success border-bottom border-success">Product Details</h2>
+            <div class="my-8" id="product-description">
             </div>
-            <div class="my-8">
-                <div class="row">
-                    <div class="col-12 col-lg-6">
-                        <table class="table table-striped">
-                            <!-- table -->
-                            <tbody>
-                                <tr>
-                                    <th>Weight</th>
-                                    <td>1000 Grams</td>
-                                </tr>
-                                <tr>
-                                    <th>Ingredient Type</th>
-                                    <td>Vegetarian</td>
-                                </tr>
-                                <tr>
-                                    <th>Brand</th>
-                                    <td>Dmart</td>
-                                </tr>
-                                <tr>
-                                    <th>Item Package Quantity</th>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>Form</th>
-                                    <td>Larry the Bird</td>
-                                </tr>
-                                <tr>
-                                    <th>Manufacturer</th>
-                                    <td>Dmart</td>
-                                </tr>
-                                <tr>
-                                    <th>Net Quantity</th>
-                                    <td>340.0 Gram</td>
-                                </tr>
-                                <tr>
-                                    <th>Product Dimensions</th>
-                                    <td>9.6 x 7.49 x 18.49 cm</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <table class="table table-striped">
-                            <!-- table -->
-                            <tbody>
-                                <tr>
-                                    <th>ASIN</th>
-                                    <td>SB0025UJ75W</td>
-                                </tr>
-                                <tr>
-                                    <th>Best Sellers Rank</th>
-                                    <td>#2 in Fruits</td>
-                                </tr>
-                                <tr>
-                                    <th>Date First Available</th>
-                                    <td>30 April 2022</td>
-                                </tr>
-                                <tr>
-                                    <th>Item Weight</th>
-                                    <td>500g</td>
-                                </tr>
-                                <tr>
-                                    <th>Generic Name</th>
-                                    <td>Banana Robusta</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <h2>Related Items</h2>
-            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-                <!-- Carousel indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <!-- Wrapper for carousel items -->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="thumb-wrapper">
-                                    <div class="img-box">
-                                        <img src="./images/Fresh-Cucumber-w410.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="thumb-content">
-                                        <h4>Fresh Cucumber</h4>
-                                        <p class="item-price"><strike>$2.00</strike> <span>$1.00</span></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thumb-wrapper">
-                                    <div class="img-box">
-                                        <img src="./images/Fresh-Red-Big-Onion-w410.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="thumb-content">
-                                        <h4>Fresh Red Big Onion</h4>
-                                        <p class="item-price"><strike>$2.00</strike> <span>$1.00</span></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thumb-wrapper">
-                                    <div class="img-box">
-                                        <img src="./images/Fresh-Ivy-Gourd-w410.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="thumb-content">
-                                        <h4>Fresh Ivy Gourd</h4>
-                                        <p class="item-price"><strike>$2.00</strike> <span>$1.00</span></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="thumb-wrapper">
-                                    <div class="img-box">
-                                        <img src="./images/Fresh-Cucumber-w410.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="thumb-content">
-                                        <h4>Fresh Cucumber</h4>
-                                        <p class="item-price"><strike>$2.00</strike> <span>$1.00</span></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thumb-wrapper">
-                                    <div class="img-box">
-                                        <img src="./images/Fresh-Red-Big-Onion-w410.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="thumb-content">
-                                        <h4>Fresh Red Big Onion</h4>
-                                        <p class="item-price"><strike>$2.00</strike> <span>$1.00</span></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thumb-wrapper">
-                                    <div class="img-box">
-                                        <img src="./images/Fresh-Ivy-Gourd-w410.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="thumb-content">
-                                        <h4>Fresh Ivy Gourd</h4>
-                                        <p class="item-price"><strike>$2.00</strike> <span>$1.00</span></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="thumb-wrapper">
-                                    <div class="img-box">
-                                        <img src="./images/Fresh-Cucumber-w410.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="thumb-content">
-                                        <h4>Fresh Cucumber</h4>
-                                        <p class="item-price"><strike>$2.00</strike> <span>$1.00</span></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thumb-wrapper">
-                                    <div class="img-box">
-                                        <img src="./images/Fresh-Red-Big-Onion-w410.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="thumb-content">
-                                        <h4>Fresh Red Big Onion</h4>
-                                        <p class="item-price"><strike>$2.00</strike> <span>$1.00</span></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="thumb-wrapper">
-                                    <div class="img-box">
-                                        <img src="./images/Fresh-Ivy-Gourd-w410.jpg" class="img-fluid" alt="">
-                                    </div>
-                                    <div class="thumb-content">
-                                        <h4>Fresh Ivy Gourd</h4>
-                                        <p class="item-price"><strike>$2.00</strike> <span>$1.00</span></p>
-                                        <a href="#" class="btn btn-primary">Add to Cart</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="h4 pb-2 my-4 text-success border-bottom border-success">Related Items</h2>
+            <div id="product-related">
             </div>
         </div>
     </div>
-    
-    <!-- footer ends -->
-    <footer>
+
+    <footer class="bg-white py-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
-                    <div class="single-box">
-                        <img src="img/logo.png" width="200px" alt="">
-                        <div class="card-area">
-                            <i class="fa fa-cc-visa"></i>
-                            <i class="fa fa-credit-card"></i>
-                            <i class="fa fa-cc-mastercard"></i>
-                            <i class="fa fa-cc-paypal"></i>
+                    <div class="text-center">
+                        <img src="./img/web-logo.png" width="200px" alt="">
+                        <div class="mt-2 d-grid gap-2 d-flex justify-content-center">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-twitter"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-box">
-                        <h2>Cẩm nang sử dụng</h2>
-                        <ul>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
+                        <h2 class="fs-4 text-uppercase">ABOUT</h2>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link text-success" href="./about-us.html">About Us</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-box">
-                        <h2>Chính sách</h2>
-                        <ul>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
+                        <h2 class="fs-4 text-uppercase">CUSTOMER SERVICE</h2>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link text-success" href="./contact-us.html">Contact
+                                    Us</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-box">
-                        <h2>Dịch vụ</h2>
-                        <ul>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">...</a></li>
+                        <h2 class="fs-4 text-uppercase">Products</h2>
+                        <ul class="nav flex-column">
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
+                            <li class="nav-item"><a class="nav-link text-success" href="#">...</a></li>
                         </ul>
-                        <p class="socials">
-                            <A>
-                                <i class="bi bi-facebook"></i>
-                            </A>
-                            <A>
-                                <i class="bi bi-instagram"></i>
-                            </A>
-                            <A>
-                                <i class="bi bi-google"></i>
-                            </A>
-                            <A>
-                                <i class="bi bi-twitter"></i>
-                            </A>
-
-
-
-
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
     <!-- All Js -->
-    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="./js/lst-products.js"></script>
+    <script src="./js/detail.js"></script>
 </body>
 
 </html>
