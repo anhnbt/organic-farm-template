@@ -2,7 +2,9 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: #eee
 }
-
+#search {
+  margin-top: 90px;
+}
 .t-products {
   background-image: linear-gradient(to right top, #5629c0, #5625cb, #5620d5, #551ae0, #5412eb);
   color: #fff;
@@ -24,21 +26,21 @@ body {
   background-color: #fff
 }
 
-h2 {
+.title {
   color: #000;
   font-size: 26px;
   font-weight: 300;
   text-align: center;
   text-transform: uppercase;
   position: relative;
-  margin: -30px 0 0px;
+  margin: 90px 0 0px;
 }
 
-h2 b {
+.title b {
   color: #ffc000;
 }
 
-h2::after {
+.title::after {
   content: "";
   width: 100px;
   position: absolute;

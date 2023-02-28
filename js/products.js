@@ -111,7 +111,7 @@ function showSP(type_arr=[]) {
                     <div class="thumb-content">
                       <h4>Onion</h4>
                       <p class="item-price"><span>${arrSP[i].gia}</span></p>
-                      <a href="#" class="btn btn-primary">Thêm vào giỏ</a>
+                      <a href="#" class="btn btn-primary">Buy</a>
                     </div>
                   </div>
                 </div>
