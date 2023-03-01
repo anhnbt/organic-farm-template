@@ -96,9 +96,8 @@ function showSP(type_arr=[]) {
   all_item.innerHTML = '';
   for (i = 0; i < arrSP.length; i++) {
     type = arrSP[i].type;
-    console.log(type);
     gia = arrSP[i].gia;
-    console.log(gia);
+    name = arrSP[i].tenSP;
     if (type_arr.length > 0) {
       if (type_arr.includes(type) == false) continue;
     }
@@ -109,7 +108,7 @@ function showSP(type_arr=[]) {
                       <img src="${arrSP[i].hinh}" class="img-fluid" alt="">
                     </div>
                     <div class="thumb-content">
-                      <h4>Onion</h4>
+                      <h4>${arrSP[i].tenSP}</h4>
                       <p class="item-price"><span>${arrSP[i].gia}</span></p>
                       <a href="#" class="btn btn-primary">Buy</a>
                     </div>
