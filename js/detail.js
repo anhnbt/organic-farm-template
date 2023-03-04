@@ -27,7 +27,11 @@ function getDetailData() {
     "product-review"
   ).innerHTML = `(${rslt.review} reviews)`;
   document.getElementById("product-title").innerHTML = rslt.title;
-  document.getElementById("product-description").innerHTML = rslt.description;
+  if (rslt.description) {
+    document.getElementById("product-description").innerHTML = rslt.description;
+  } else {
+    document.getElementById("product-description").innerHTML = 'No content';
+  }
   document.getElementById(
     "product-thumbnail"
   ).style.backgroundImage = `url(${rslt.thumbnail})`;
@@ -37,6 +41,7 @@ function getDetailData() {
     images += `<div class="col-3"><img style="cursor: pointer" src="${img}" alt="" onclick="changeThumbnail('${img}')"></div>`;
   });
   document.getElementById("product-images").innerHTML = images;
+  document.getElementById('product-related').innerHTML = 'No release.';
 }
 
 getDetailData();
