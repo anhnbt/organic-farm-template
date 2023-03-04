@@ -292,20 +292,6 @@
   opacity: 0
 }
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: 10px;
-  left: 0;
-  width: 100%
-}
-
-.swiper-pagination-bullets-dynamic {
-  overflow: hidden;
-  font-size: 0
-}
-
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
   transform: scale(.33);
   position: relative

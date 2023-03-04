@@ -157,10 +157,17 @@ body {
 
 /* Slider start */
 .carousel-item img {
+  width: 100%;
   height: 100vh;
-  min-height: 300px;
   object-fit: cover;
+  min-height: 300px;
+  image-rendering: crisp-edges;
 }
+.text-caption{
+  text-shadow: #000 4px 3px 5px;
+}
+a{text-decoration: none}
+
 /* */
 .section-padding {
   padding: 45px;
