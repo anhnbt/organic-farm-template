@@ -226,6 +226,8 @@ a.inverse-green {
   -webkit-box-shadow: 0px 0px 7px rgb(0 0 0 / 20%);
   -moz-box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 0px 7px rgb(0 0 0 / 20%);
+  transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 .category-title {
@@ -243,4 +245,18 @@ a.inverse-green {
 
 .category-title a {
   color: #fff;
+}
+
+.category:hover {
+  box-shadow: 2px 1px 0px #d4d5d6;
+    transform: scale(1.03);
+}
+.card-meow1{
+  margin-left: 70px;
+}
+.card-meow{
+  margin-left: -15px;
+}
+.card-meow2{
+  margin-top: -15px;
 }
