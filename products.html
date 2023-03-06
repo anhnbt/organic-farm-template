@@ -23,86 +23,79 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white bg-gradient shadow-sm fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/">
-            <img src="./img/web-logo.png" width="120px" alt="Logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link text-success" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-success dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Products
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="products.html">Nutritious cereals</a></li>
-                        <li><a class="dropdown-item" href="products.html">Pulses</a></li>
-                        <li><a class="dropdown-item" href="products.html">Spices and Condiments</a></li>
-                        <li><a class="dropdown-item" href="products.html">Fruit Pulps</a></li>
-                        <li><a class="dropdown-item" href="products.html">Agro Products</a></li>
-                        <li><a class="dropdown-item" href="products.html">Oils</a></li>
-                        <li><a class="dropdown-item" href="products.html">Wheat and Wheat Flour</a></li>
-                        <li><a class="dropdown-item" href="products.html">Rice and Rice products and so on</a></li>
-                            
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-success" href="contact-us.html">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-success" href="about-us.html">About Us</a>
-                </li>
+      <a class="navbar-brand" href="/">
+        <img src="./img/web-logo.png" width="120px" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-success" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link text-success dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="products.html">Nutritious cereals</a></li>
+              <li><a class="dropdown-item" href="products.html">Pulses</a></li>
+              <li><a class="dropdown-item" href="products.html">Spices and Condiments</a></li>
+              <li><a class="dropdown-item" href="products.html">Fruit Pulps</a></li>
+              <li><a class="dropdown-item" href="products.html">Agro Products</a></li>
+              <li><a class="dropdown-item" href="products.html">Oils</a></li>
+              <li><a class="dropdown-item" href="products.html">Wheat and Wheat Flour</a></li>
+              <li><a class="dropdown-item" href="products.html">Rice and Rice products and so on</a></li>
+
             </ul>
-            
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="contact-us.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success" href="about-us.html">About Us</a>
+          </li>
+        </ul>
+
+      </div>
     </div>
-</nav>
-<!-- body -->
+  </nav>
+  <!-- body -->
   <div class="container">
     <div class="row g-2">
-      <div class="col-md-3">
+      <div class="col-md-3 mb-lg-5">
         <form class="d-flex" id="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <a href="#" class="btn btn-primary"><i class="fa fa-search"></i></a>
         </form>
-        <div class="raucu p-2">
+        <div class="raucu p-2 mb-1">
           <div class="heading d-flex justify-content-between align-items-center">
             <h6 class="text-uppercase">Vegetable</h6>
           </div>
           <div class="d-flex justify-content-between mt-2">
             <div class="form-check"> <input class="form-check-input category" onchange="chonSP()" type="checkbox"
-                value="home-decoration" id="decorateDefault">
-              <label class="form-check-label" for="decorateDefault"> Home-decoration </label>
+                value="Cooking oils" id="oilsDefault">
+              <label class="form-check-label" for="oilsDefault"> Cooking oils </label>
             </div>
           </div>
           <div class="d-flex justify-content-between mt-2">
             <div class="form-check"> <input class="form-check-input category" onchange="chonSP()" type="checkbox"
-                value="groceries" id="groceriesChecked"> <label class="form-check-label" for="groceriesChecked">
-                Groceries </label> </div>
+                value="Flours & Meals" id="floursChecked"> <label class="form-check-label" for="floursChecked">
+                  Flours & Meals </label> </div>
           </div>
           <div class="d-flex justify-content-between mt-2">
             <div class="form-check"> <input class="form-check-input category" onchange="chonSP()" type="checkbox"
-                value="skincare" id="skincareChecked"> <label class="form-check-label" for="skincareChecked">
-                  Skincare </label>
+                value="Rice" id="riceChecked"> <label class="form-check-label" for="riceChecked">
+                  Rice </label>
             </div>
           </div>
           <div class="d-flex justify-content-between mt-2">
             <div class="form-check"> <input class="form-check-input category" onchange="chonSP()" type="checkbox"
-                value="fragrances" id="fragrancesChecked"> <label class="form-check-label" for="fragrancesChecked">
-                  Fragrances </label>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between mt-2">
-            <div class="form-check"> <input class="form-check-input category" onchange="chonSP()" type="checkbox"
-                value="laptops" id="laptopsChecked"> <label class="form-check-label" for="laptopsChecked">
-                  Laptops </label>
+                value="Fresh Vegetables" id="vegetableChecked"> <label class="form-check-label" for="vegetableChecked">
+                  Fresh Vegetables </label>
             </div>
           </div>
         </div>
@@ -112,98 +105,91 @@
           </div>
           <div class="d-flex justify-content-between mt-2">
             <div class="form-check"> <input class="form-check-input category" onchange="chonSP()" type="checkbox"
-                value="smartphones" id="smartphonesDefault">
-              <label class="form-check-label" for="smartphonesDefault"> Smartphones </label>
-            </div>
-          </div>
-          <div class="d-flex justify-content-between mt-2">
-            <div class="form-check"> <input class="form-check-input category" onchange="chonSP()" type="checkbox"
-                value="Spices and Condiments" id="spices-condimentsChecked"> <label class="form-check-label" for="spices-condimentsChecked">
-                  Spices and Condiments </label>
+                value="Spices and Condiments" id="spices-condimentsChecked"> <label class="form-check-label"
+                for="spices-condimentsChecked">
+                Spices and Condiments </label>
             </div>
           </div>
           <div class="d-flex justify-content-between mt-2">
             <div class="form-check"> <input class="form-check-input category" onchange="chonSP()" type="checkbox"
                 value="Pulses" id="pulsesChecked"> <label class="form-check-label" for="pulsesChecked">
-                  Pulses </label>
+                Pulses </label>
             </div>
           </div>
           <div class="d-flex justify-content-between mt-2">
             <div class="form-check"> <input class="form-check-input category" onchange="chonSP()" type="checkbox"
-                value="Nutritious cereals" id="nutritiouscerealsChecked"> <label class="form-check-label" for="nutritiouscerealsChecked">
-                  Nutritious cereals
+                value="Nutritious cereals" id="nutritiouscerealsChecked"> <label class="form-check-label"
+                for="nutritiouscerealsChecked">
+                Nutritious cereals
               </label> </div>
           </div>
         </div>
       </div>
       <div class="col-md-9">
         <h2 class="title"><b>Products</b></h2>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-          <div class="carousel-inner">
-            <div class="carousel-item1 active">
-              <div class="row" id="all_item">
-              </div>
+        <div class="slide1-container" id="all_item">
+
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <footer class="bg-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box">
+              <img src="./img/web-logo.png" width="250px" alt="">
+              <H2> </H2>
+              <ul class="nav flex-column" style="margin-left: -15px;">
+                <Li class="nav-item"><a class="nav-link text-success" href="#"><i
+                      class="fa-solid fa-location-dot"></i>&nbsp; Đống Đa, Hà Nội, Việt Nam</a></Li>
+                <li class="nav-item"><a class="nav-link text-success" href="#"><i class="fa-solid fa-phone"></i>&nbsp;
+                    0382 020 858 - 0222 342 495 </a></li>
+                <li class="nav-item"><a class="nav-link text-success" href="#"> <i
+                      class="fa-sharp fa-regular fa-envelope"></i>&nbsp; info@aptech.vn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box">
+              <h2 class="fs-6 text-uppercase">COOPERATION & DEVELOPMENT</h2>
+              <ul class="nav flex-column" style="margin-left: -15px;">
+                <li class="nav-item"><a class="nav-link text-success" href="#">Become an Organic Farm agent </a></li>
+                <li class="nav-item"><a class="nav-link text-success" href="#">Retail price list </a></li>
+                <li class="nav-item"><a class="nav-link text-success" href="#">Photos library </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box">
+              <h2 class="fs-6 text-uppercase">GIVE KINDNESS</h2>
+              <ul class="nav flex-column" style="margin-left: -15px;">
+                <li><a class="nav-link text-success" href="#">Work with kindness</a></li>
+                <li><a class="nav-link text-success" href="#">Put the customer at the center</a></li>
+                <li><a class="nav-link text-success" href="#">Immaculate and safe </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6">
+            <div class="single-box">
+              <h2 class="fs-6 text-uppercase">ABOUT</h2>
+              <ul class="nav flex-column" style="margin-left: -15px;">
+                <li class="nav-item"><a class="nav-link text-success" href="about-us.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link text-success" href="#">Advise</a></li>
+                <li class="nav-item"><a class="nav-link text-success" href="#">terms of use</a></li>
+                <li class="nav-item"><a class="nav-link text-success" href="#">Privacy Policy</a></li>
+                <li class="nav-item"><a class="nav-link text-success" href="#">Other Policy</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!--  -->
-  <footer class="bg-white py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-box">
-                    <img src="./img/web-logo.png" width="250px" alt="">
-                        <H2> </H2>
-                            <ul class="nav flex-column" style="margin-left: -15px;">
-                                <Li class="nav-item"><a class="nav-link text-success" href="#"><i class="fa-solid fa-location-dot"></i>&nbsp; Đống Đa, Hà Nội, Việt Nam</a></Li> 
-                                <li class="nav-item"><a class="nav-link text-success" href="#"><i class="fa-solid fa-phone"></i>&nbsp; 0382 020 858 - 0222 342 495 </a></li>
-                                <li class="nav-item"><a class="nav-link text-success" href="#"> <i class="fa-sharp fa-regular fa-envelope"></i>&nbsp; info@aptech.vn</a></li>
-                            </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-box">
-                    <h2 class="fs-6 text-uppercase">COOPERATION & DEVELOPMENT</h2>
-                        <ul class="nav flex-column"style="margin-left: -15px;">
-                            <li class="nav-item"><a class="nav-link text-success" href="#">Become an Organic Farm agent </a></li>    
-                            <li class="nav-item"><a class="nav-link text-success" href="#">Retail price list </a></li>   
-                            <li class="nav-item"><a class="nav-link text-success" href="#">Photos library </a></li>   
-                        </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-box">
-                    <h2 class="fs-6 text-uppercase">GIVE KINDNESS</h2>
-                        <ul class="nav flex-column"style="margin-left: -15px;">
-                            <li><a class="nav-link text-success" href="#">Work with kindness</a></li>
-                            <li><a class="nav-link text-success" href="#">Put the customer at the center</a></li>
-                            <li><a class="nav-link text-success" href="#">Immaculate and safe </a></li>
-                        </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-box">
-                    <h2 class="fs-6 text-uppercase">ABOUT</h2>
-                        <ul class="nav flex-column" style="margin-left: -15px;">
-                            <li class="nav-item"><a class="nav-link text-success" href="about-us.html">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link text-success" href="#">Advise</a></li>
-                            <li class="nav-item"><a class="nav-link text-success" href="#">terms of use</a></li>
-                            <li class="nav-item"><a class="nav-link text-success" href="#">Privacy Policy</a></li>
-                            <li class="nav-item"><a class="nav-link text-success" href="#">Other Policy</a></li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-  <!-- All Js -->
-  <script src="./js/swiper-bundle.min.js"></script>
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./js/products.js"></script>
+    </footer>
+    <!-- All Js -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/products.js"></script>
 </body>
 
 </html>
