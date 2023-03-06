@@ -566,15 +566,14 @@ var arrSP = [
 	},
 ];
 
-function showSP(type_arr = []) {
+function showSP(category_arr = []) {
 	var all_item = document.getElementById('all_item');
 	all_item.innerHTML = '';
 	for (i = 0; i < arrSP.length; i++) {
-		type = arrSP[i].type;
+		category = arrSP[i].category;
 		gia = arrSP[i].gia;
-		name = arrSP[i].tenSP;
-		if (type_arr.length > 0) {
-			if (type_arr.includes(type) == false) continue;
+		if (category_arr.length > 0) {
+			if (category_arr.includes(category) == false) continue;
 		}
 		all_item.innerHTML += `
                 <div class="item col-sm-4">
@@ -595,10 +594,10 @@ function showSP(type_arr = []) {
 showSP();
 
 function chonSP() {
-	var arr1 = document.getElementsByClassName('type');
-	var type_arr = [];
+	var arr1 = document.getElementsByClassName('category');
+	var category_arr = [];
 	for (i = 0; i < arr1.length; i++) {
-		if (arr1[i].checked == true) type_arr.push(arr1[i].value);
+		if (arr1[i].checked == true) category_arr.push(arr1[i].value);
 	}
-	showSP(type_arr);
+	showSP(category_arr);
 }
