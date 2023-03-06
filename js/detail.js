@@ -14,7 +14,7 @@ function getDetailData() {
   const queryId = getProductId();
   const rslt = products.find((product) => product.id === +queryId);
   if (!rslt) {
-    document.getElementById('contentarea').innerHTML = `<div class="card text-center p-4 my-4"><h1>404 Not Found</h1><p>Sorry, We Couldn't Find This Page.</p></div>`;
+    document.getElementById('contentarea').innerHTML = `<div class="card text-center p-4 my-4"><h1>404 Not Found</h1><p>This page doesn't exist! <a href="./index.html">Go back home.</a>.</p></div>`;
     return;
   }
   console.log(document.getElementById("product-price"));

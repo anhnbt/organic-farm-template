@@ -249,14 +249,5 @@ a.inverse-green {
 
 .category:hover {
   box-shadow: 2px 1px 0px #d4d5d6;
-    transform: scale(1.03);
-}
-.card-meow1{
-  margin-left: 70px;
-}
-.card-meow{
-  margin-left: -15px;
-}
-.card-meow2{
-  margin-top: -15px;
+  transform: scale(1.03);
 }
