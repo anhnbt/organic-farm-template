@@ -1,5 +1,5 @@
 var arrSP = [
-	{
+  {
     id: 1,
     title:
       "Cascadian Farm Organic Hearty",
@@ -420,14 +420,14 @@ var arrSP = [
 ];
 
 function showSP(category_arr = []) {
-	var all_item = document.getElementById('all_item');
-	all_item.innerHTML = '';
-	for (i = 0; i < arrSP.length; i++) {
-		category = arrSP[i].category;
-		if (category_arr.length > 0) {
-			if (category_arr.includes(category) == false) continue;
-		}
-		all_item.innerHTML += `
+  var all_item = document.getElementById('all_item');
+  all_item.innerHTML = '';
+  for (i = 0; i < arrSP.length; i++) {
+    category = arrSP[i].category;
+    if (category_arr.length > 0) {
+      if (category_arr.includes(category) == false) continue;
+    }
+    all_item.innerHTML += `
 													<div class="slide1-content">
 														<div class="col-4 card1">
 															<div>
@@ -450,15 +450,15 @@ function showSP(category_arr = []) {
 														</div>
 													</div>
     `;
-	}
+  }
 }
 showSP();
 
 function chonSP() {
-	var arr1 = document.getElementsByClassName('category');
-	var category_arr = [];
-	for (i = 0; i < arr1.length; i++) {
-		if (arr1[i].checked == true) category_arr.push(arr1[i].value);
-	}
-	showSP(category_arr);
+  var arr1 = document.getElementsByClassName('category');
+  var category_arr = [];
+  for (i = 0; i < arr1.length; i++) {
+    if (arr1[i].checked == true) category_arr.push(arr1[i].value);
+  }
+  showSP(category_arr);
 }
