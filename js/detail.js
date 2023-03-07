@@ -18,7 +18,7 @@ function getDetailData() {
     return;
   }
   console.log(document.getElementById("product-price"));
-  document.getElementById("product-category").textContent = `${rslt.category}`;
+  document.getElementById("product-category").innerHTML = `<a href="./products.html?category=${rslt.category}">${rslt.category}</a>`;
   document.getElementById("product-price").innerHTML = `$${rslt.price}`;
   document.getElementById(
     "product-discountPercentage"

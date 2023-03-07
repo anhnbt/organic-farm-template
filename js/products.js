@@ -452,7 +452,6 @@ function showSP(category_arr = []) {
     `;
   }
 }
-showSP();
 
 function chonSP() {
   var arr1 = document.getElementsByClassName('category');
@@ -461,4 +460,58 @@ function chonSP() {
     if (arr1[i].checked == true) category_arr.push(arr1[i].value);
   }
   showSP(category_arr);
+}
+
+function init() {
+  const params = new URLSearchParams(window.location.search);
+  const category = params.get("category");
+  var category_arr = [];
+  if (category) {
+    category_arr.push(category);
+  }
+  showSP(category_arr);
+}
+
+init();
+
+function onSearch() {
+  const query = document.getElementById('txtSearch').value;
+  if (!query) {
+    showSP();
+    document.getElementById('search-counter').innerHTML = ``;
+    return;
+  }
+  const all_item = document.getElementById('all_item');
+  all_item.innerHTML = '';
+  let counter = 0;
+  for (i = 0; i < arrSP.length; i++) {
+    const title = arrSP[i].title;
+    if (title.toLocaleLowerCase().includes(query.toLocaleLowerCase())) {
+      counter++;
+      all_item.innerHTML += `
+      <div class="slide1-content">
+        <div class="col-4 card1">
+          <div>
+            <div class="image-content">
+              <span class="overlay"></span>
+              <div class="card-image">
+                <img src="${arrSP[i].thumbnail}" alt="${arrSP[i].title}" class="card-img">
+              </div>
+            </div>
+            <div class="card-content">
+              <h2 class="name"><a class="text-dark" href="./detail.html?id=${arrSP[i].id}">${arrSP[i].title}</a></h2>
+              <div class="fs-4">
+                <span class="fw-bold text-dark" id="product-price">$${arrSP[i].discountPercentage}</span>
+                <span class="text-decoration-line-through text-muted"
+                  id="product-discountPercentage">$${arrSP[i].stock}</span>
+              </div>
+              <a class="btn btn-success" href="detail.html?id=${arrSP[i].id}">Shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+`;
+    }
+  }
+  document.getElementById('search-counter').innerHTML = `<div class="alert alert-primary"> Found ${counter} results</div>`;
 }
